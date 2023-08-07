@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2vcjw7g655wn"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_kshpc"]
+[ext_resource type="PackedScene" uid="uid://dvmajd2l7qnuy" path="res://board.tscn" id="1_r3a65"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_kshpc")
+
+[node name="Board" parent="." instance=ExtResource("1_r3a65")]
+
+[node name="turn_order" type="Label" parent="."]
+offset_left = 640.0
+offset_top = 64.0
+offset_right = 1024.0
+offset_bottom = 133.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 50
+uppercase = true
